@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Veita Restaurant</title>
+        <link rel="icon" href=../img/logo/log.ico>
+        <link rel="stylesheet" href="../CSS/estilo.css">
+        <link rel="stylesheet" href="../CSS/main.css">
+        <script src="https://kit.fontawesome.com/aadcc43189.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav class="nav">
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <a href="../HTML/proyect.html" class="logo">
+                        <img  src="../img/logo/LOGO.png" alt="logo"></a>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="../HTML/proyect.html" class="nav-link">Inicio</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a href="../HTML/Menú.html" class="nav-link">Menu</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a href="../HTML/reserva.html" class="nav-link active">Reservaciones</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a href="../HTML/login.html" class="nav-link">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section class = "fondo">
+            <h2>RESERVACIONES VEITA FOOD</h2>
+            <div class = "card-container">
+                <div class = "card-img">
+                    <img src="../img/reserva.jpg" alt="">
+                </div>
+
+                <div class = "card-content">
+                    <h3>Reservación</h3>
+                    <form action="altas3.php" target="" method="post" name="Reserva">
+                        <div class = "form-row">
+                            <input type="date" id="start" name="fecha"
+                            value=""
+                            min="2021-01-01" max="2022-12-31" required>
+
+                            <select name = "horas">
+                                <option value = "Seleccione hora">Seleccione hora</option>
+                                <option value = "10">11: 00</option>
+                                <option value = "10">12: 00</option>
+                                <option value = "10">13: 00</option>
+                                <option value = "10">14: 00</option>
+                                <option value = "10">15: 00</option>
+                                <option value = "10">16: 00</option>
+                                <option value = "10">17: 00</option>
+                                <option value = "10">18: 00</option>
+                                <option value = "10">19: 00</option>
+                                <option value = "10">20: 00</option>
+                                <option value = "10">21: 00</option>
+                            </select>
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "text" placeholder="Nombre Completo" maxlength="25" minlength="0" pattern="[A-Za-z0-9_-]{1,15}" name="nombre" required>
+                            <input type = "text" placeholder="Número teléfono" maxlength="8" name="numero" required>
+                        </div>
+
+                        <div class = "form-row">
+                            <input type="text" placeholder="Cantidad de Personas" name="personas" maxlength="2" minlength="1">
+                            <input type = "submit" value = "Reservar">
+                        </div>
+                    </form>
+                </div> 
+            </div>
+        </section>
+        
+    </body>
+</html>

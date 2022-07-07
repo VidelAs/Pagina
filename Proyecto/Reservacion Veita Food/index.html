@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Veita Restaurant</title>
+        <link rel="icon" href=../img/logo/log.ico>
+        <link rel="stylesheet" href="../CSS/main.css">
+        <script src="https://kit.fontawesome.com/aadcc43189.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+    <body>
+        
+        <section class = "banner">
+            <h2>RESERVACIONES VEITA FOOD</h2>
+            <div class = "card-container">
+                <div class = "card-img">
+                    <img src="../img/reserva.jpg">
+                </div>
+
+                <div class = "card-content">
+                    <h3>Reservación</h3>
+                    <form action="altas3.php" target="" method="post" name="Reserva">
+                        <div class = "form-row">
+                            <input type="date" id="start" name="fecha"
+                            value="2018-07-22"
+                            min="2021-01-01" max="2022-12-31">
+
+                            <select name = "horas">
+                                <option value = "Seleccione hora">Seleccione hora</option>
+                                <option value = "10">11: 00</option>
+                                <option value = "10">12: 00</option>
+                                <option value = "10">13: 00</option>
+                                <option value = "10">14: 00</option>
+                                <option value = "10">15: 00</option>
+                                <option value = "10">16: 00</option>
+                                <option value = "10">17: 00</option>
+                                <option value = "10">18: 00</option>
+                                <option value = "10">19: 00</option>
+                                <option value = "10">20: 00</option>
+                                <option value = "10">21: 00</option>
+                            </select>
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "text" placeholder="Nombre Completo" maxlength="8" minlength="0" pattern="[A-Za-z0-9_-]{1,15}" name="nombre">
+                            <input type = "text" placeholder="Número teléfono" maxlength="8" name="numero">
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "number" placeholder="Cantidad personas" min = "1" max="10" name="personas">
+                            <input type = "submit" value = "Reservar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>

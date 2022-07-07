@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEITA RESTAURANT</title>
+    <link rel="icon" href=../img/log.ico>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <script src="https://kit.fontawesome.com/aadcc43189.js" crossorigin="anonymous"></script>
+</head>
+<body >
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="altas2.php" target="" method="post" name="formulario">
+			<h1>Crear una Cuenta</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>usa tu Email para registrarse</span>
+			<input type="text" placeholder="Name" maxlength="30" minlength="0" pattern="[a-z]{1,15}" name="name" required />
+			<input type="email" placeholder="Email" maxlength="30" minlength="0" name="email" required/>
+			<input type="password" placeholder="Password" maxlength="8" minlength="0" pattern="[A-Za-z0-9_-]{1,15}" name="password" required/>
+			<button>Registrarse</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Iniciar sesión</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>Usa tu cuenta</span>
+			<input type="email" placeholder="Email" maxlength="30" minlength="0" />
+			<input type="password" placeholder="Password" maxlength="8" minlength="0" pattern="[A-Za-z0-9_-]{1,15}"/>
+			<a href="#">Olvido su contraseña?</a>
+			<button><a href="../HTML/proyect.html">Iniciar Sesión</a></button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<img src="../img/LOGO.png" alt="">
+				<p>Para mantenerte conectado con nosotros por favor ingresa tu información</p>
+				<button class="ghost" id="signIn">Iniciar Sesión</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+                <img src="../img/LOGO.png" alt="">
+				<p>Introduce tus datos personales para estar más cerca de nosotros</p>
+				<button class="ghost" id="signUp" href="../HTML/proyect.html" ><a >Registrarse</a></button>
+			</div>
+		</div>
+	</div>
+</div>
+
+    <script src="../JS/login.js"></script>
+      
+      
+</body>
+
+</html>
